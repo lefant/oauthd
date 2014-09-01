@@ -22,7 +22,6 @@
   },
   "scripts": {
     "install": "echo Please run 'oauthd config' to edit the configuration file.",
-    "prepublish": "grunt",
     "start": "bash ./oauthd.sh start",
     "stop": "bash ./oauthd.sh stop",
     "test": "grunt test && coffee ./test/providers_check.coffee"
@@ -42,11 +41,7 @@
     "async": "~0.2.9",
     "request": "~2.33.0",
     "restify-oauth2-oauthd": "~2.1.0",
-    "ua-parser-js": "~0.6.2",
-    "zlib": "~1.0.5"
-  },
-  "devDependencies": {
-    "grunt-nodemon": "~0.1.2",
+    "coffee-script": "*",
     "grunt-contrib-jshint": "latest",
     "grunt-contrib-nodeunit": "latest",
     "grunt-contrib-watch": "latest",
@@ -55,6 +50,12 @@
     "grunt-concurrent": "latest",
     "grunt-subgrunt": "~0.3.0",
     "grunt": "~0.4.4",
+    "grunt-cli": "*",
+    "grunt-nodemon": "~0.1.2",
+    "ua-parser-js": "~0.6.2",
+    "zlib": "~1.0.5"
+  },
+  "devDependencies": {
     "jayschema": "~0.2.0",
     "jsonlint": "~1.6.0",
     "q": "^1.0.1"
