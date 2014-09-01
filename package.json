@@ -57,8 +57,7 @@
   "devDependencies": {
     "jayschema": "~0.2.0",
     "jsonlint": "~1.6.0",
-    "q": "^1.0.1",
-    "zlib": "~1.0.5"
+    "q": "^1.0.1"
   }
 }
 
