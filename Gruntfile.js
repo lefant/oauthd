@@ -84,4 +84,5 @@ module.exports = function(grunt) {
     // Default task.
     grunt.registerTask('default', ['coffee', 'copy']);
     grunt.registerTask('test', ['jasmine_node:all']);
+    grunt.registerTask('heroku:', ['default']);
 };
