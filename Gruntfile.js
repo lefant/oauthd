@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         },
         coffee: {},
         subgrunt: {},
-        taskDefault: ['coffee', 'subgrunt']
+        taskDefault: ['subgrunt']
     };
 
     var tasks = [];
@@ -53,4 +53,5 @@ module.exports = function(grunt) {
     // Default task.
     grunt.registerTask('default', gruntConf.taskDefault);
     grunt.registerTask('test', ['nodeunit']);
+    grunt.registerTask('heroku:', ['subgrunt']);
 };
